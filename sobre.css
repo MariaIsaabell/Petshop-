@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    background-color: #e4dad0; /* Cor de fundo, você pode mudar */
+}
+
+/* Estilo para a tag de vídeo */
+.video {
+    border: 6px solid black; /* Borda preta */
+    max-width: 90%; /* Limita a largura do vídeo */
+    max-height: 90%; /* Limita a altura do vídeo */
+    object-fit: contain; /* Mantém as proporções do vídeo */
+}

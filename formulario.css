@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('./img/3 fundo.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.login-box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 440px;
+    height: 480px;
+    padding: 30px;
+}
+.login-header{
+    text-align: center;
+    margin: 20px 0 40px 0;
+}
+.login-header header{
+    color: #000;
+    font-size: 30px;
+    font-weight: 600;
+}
+.login-header header:hover{
+    color: #c7a17a;
+}
+.input-box .input-field{
+    width: 100%;
+    height: 60px;
+    font-size: 17px;
+    padding: 0 25px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0px 5px 10px 1px rgba(0,0,0, 0.05);
+    outline: none;
+    border: 2px solid black; /* espessura, estilo, cor */
+}
+::placeholder{
+    font-weight: 500;
+    color: #222;
+}
+.forgot{
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    gap: 40px; /* Espaço entre os dois elementos */
+    margin-bottom: 40px;
+
+}
+section{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #000;
+}
+/* #check{
+    margin-right: 10px;
+} */
+/* .lembrar:hover{
+    color: #f99632;
+    text-decoration: underline;
+} */
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    color: #f99632;
+}
+section a{
+    color: black;
+}
+.input-submit{
+    position: relative;
+}
+.submit-btn{
+    width: 100%;
+    height: 60px;
+    background: #000;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+.input-submit label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    cursor: pointer;
+}
+.input-submit label:hover{
+    color: #000;
+}
+
+.submit-btn:hover{
+    background: #c7a17a;
+}
+.link-de-inscrição{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+}
+.link-de-inscrição a{
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+}
+.link-de-inscrição a:hover{
+    color: #f5af6a;
+}

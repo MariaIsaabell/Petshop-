@@ -1,0 +1,283 @@
+:root {
+    --background-color: #F9FDFE;
+    --secondary-background-color: #C5ECE9;
+    --text-color: #c7a17a;
+    --button-color: #c7a17a;
+    --icon-color: #c7a17a;
+    --border: 2px solid black;
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+section {
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.header {
+    background-color: var(--background-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-bottom: var(--border);
+    background-color: var(--background-color);
+}
+
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 2rem; /* diminui top e bottom */
+    gap: 1rem; /* espaço interno entre logo, menu e ícones */
+}
+
+
+.logo img {
+    width: 130px;       /* aumenta horizontalmente */
+    max-height: 60px;   /* aumenta verticalmente sem estourar o header */
+    object-fit: contain;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.navbar a {
+    margin: 0 1.8rem; /* espaçamento lateral maior entre os links */
+    font-size: 1.6rem;
+    color: #000;
+}
+
+.navbar a:hover {
+    color: var(--icon-color);
+    border-bottom: 0.1rem solid var(--background-color);
+    padding-bottom: 0.5rem;
+    font-size: 1.8rem;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem; /* distância entre ícones */
+}
+
+.icons img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.icons img:hover {
+    width: 30px;
+    height: 30px;
+}
+
+.btn {
+    background: var(--button-color);
+    color: black;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block;
+    border: 2px solid rgb(35, 35, 35); /* espessura, estilo, cor */
+}
+
+.btn:hover {
+    letter-spacing: 0.1rem;
+}
+
+.home-container {
+    background: url(./img/fundo4.avif);
+    background-size: cover;
+    background-position: center;
+    background-size: cover;
+}
+
+.home-container section {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+
+}
+.content {
+    max-width: 60rem;
+
+}
+
+.content h3 {
+    color: #000;
+    font-size: 6rem;
+}
+
+.content h3 span {
+    color: #c7a17a;
+}
+
+
+.content p {
+    color: #000;
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+.title {
+    font-size: 4rem;
+    color: var(--text-color);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+
+.title span {
+    color: #000;
+    text-transform: uppercase;
+}
+
+.about .row {
+    display: flex;
+    align-items: center;
+    background-color: #eee6df;
+    gap: 1.5rem;
+}
+
+.about .row .content {
+   padding: 2rem;
+
+}
+
+.about .row .content h3 {
+    font-size: 3rem;
+    color: #000;
+}
+
+.about .row .content p {
+    font-size: 1.6rem;
+    color: #000;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+.box-container {
+    display: grid; /* Organizar itens de forma automática */
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); /* Como que eu quero que seja as organizações das minhas colunas */
+    gap: 1.5rem;
+}
+
+.menu .box-container .box {
+    text-align: center;
+    border: var(--border);
+    padding: 5rem;
+    cursor: pointer;
+}
+
+.menu .box-container .box img {
+    height: 10rem;
+}
+
+
+.menu .box-container .box h3 {
+    color: #000;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.menu .box-container .box .price {
+    color: #000;
+    font-size: 2.5rem;
+    padding: 0.5rem 0; 
+}
+
+.menu .box-container .box .price span {
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+
+.menu .box-container .box:hover {
+    background-color: #ebcbab;
+}
+
+.menu .box-container .box:hover>* { /* Aplicar para todo mundo que está dentro do box */
+    color: #fff;
+}
+
+.review .box-container {
+    color: #000;   
+}
+
+.review .box-container .box {
+    border: var(--border);
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.review .box-container .box p {
+    font-size: 1.5rem;
+    color: #000;
+    padding: 2rem 0;
+    line-height: 1.8;
+    font-weight: lighter;
+}
+
+.review .box-container .box h3 {
+    color: #000;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+
+}
+
+
+.review .box-container .box .user {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+}
+
+.address {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer .share {
+    padding: 1rem 0;
+}
+
+.footer .share img {
+    margin: 0.3rem;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.footer .share img:hover {
+    background-color: var(--button-color);
+}
+
+
